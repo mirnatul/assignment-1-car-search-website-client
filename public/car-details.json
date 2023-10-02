@@ -1,0 +1,178 @@
+[
+    {
+        "id": 1,
+        "image": "https://i.ibb.co/CKCy23F/car-1-removebg-preview.png",
+        "name": "Hundai Grand i10 Nios",
+        "description": "The new Grand i10 Nios slots in between the existing Grand i10 and larger i20 in Hyundai’s India range. Key talking points include keen prici...",
+        "speed": "199",
+        "energy": "1197",
+        "fuel": "petrol",
+        "price": "6.32 lakh",
+        "bg": "bg-gradient-to-br from-red-600 to-slate-900"
+    },
+    {
+        "id": 2,
+        "image": "https://i.ibb.co/sP80jyx/car-2-new-removebg-preview.png",
+        "name": "Aston Martin DB12",
+        "description": "The Aston Martin DB12 is the successor to the DB11, and is priced from Rs 4.8 crore (ex showroom) in India, before options. It no longer gets a V12 en...",
+        "speed": "320",
+        "energy": "3998",
+        "fuel": "petrol",
+        "price": "4.80 crore",
+        "bg": "from-green-600 to-slate-900"
+    },
+    {
+        "id": 3,
+        "image": "https://i.ibb.co/BgDf2tF/car-3-removebg-preview.png",
+        "name": "Rolls-Royce Wraith",
+        "description": "Rolls-Royce calls the Wraith a gentleman’s GT. It is that, and then some more. The four-seat coupe is the most powerful and most dynamic Rolls-Royce y...",
+        "speed": "240",
+        "energy": "6592",
+        "fuel": "petrol",
+        "price": "7.18 crore",
+        "bg": "from-slate-900 to-slate-700"
+    },
+    {
+        "id": 4,
+        "image": "https://i.ibb.co/b2Z1JMj/car-4-removebg-preview.png",
+        "name": "BMW 5 Series",
+        "description": "The BMW 5 Series has always been the sportiest of the large luxury sedans. However, the latest model also goes the distance to pamper occupants at ...",
+        "speed": "280",
+        "energy": "1998",
+        "fuel": "petrol",
+        "price": "75.69 lakh",
+        "bg": "from-blue-800 to-slate-900"
+    },
+    {
+        "id": 5,
+        "image": "https://i.ibb.co/CKCy23F/car-1-removebg-preview.png",
+        "name": "Hundai Grand i10 Nios",
+        "description": "The new Grand i10 Nios slots in between the existing Grand i10 and larger i20 in Hyundai’s India range. Key talking points include keen prici...",
+        "speed": "199",
+        "energy": "1197",
+        "fuel": "petrol",
+        "price": "6.32 lakh",
+        "bg": "bg-gradient-to-br from-red-600 to-slate-900"
+    },
+    {
+        "id": 6,
+        "image": "https://i.ibb.co/sP80jyx/car-2-new-removebg-preview.png",
+        "name": "Aston Martin DB12",
+        "description": "The Aston Martin DB12 is the successor to the DB11, and is priced from Rs 4.8 crore (ex showroom) in India, before options. It no longer gets a V12 en...",
+        "speed": "320",
+        "energy": "3998",
+        "fuel": "petrol",
+        "price": "4.80 crore",
+        "bg": "from-green-600 to-slate-900"
+    },
+    {
+        "id": 7,
+        "image": "https://i.ibb.co/BgDf2tF/car-3-removebg-preview.png",
+        "name": "Rolls-Royce Wraith",
+        "description": "Rolls-Royce calls the Wraith a gentleman’s GT. It is that, and then some more. The four-seat coupe is the most powerful and most dynamic Rolls-Royce y...",
+        "speed": "240",
+        "energy": "6592",
+        "fuel": "petrol",
+        "price": "7.18 crore",
+        "bg": "from-slate-900 to-slate-700"
+    },
+    {
+        "id": 8,
+        "image": "https://i.ibb.co/b2Z1JMj/car-4-removebg-preview.png",
+        "name": "BMW 5 Series",
+        "description": "The BMW 5 Series has always been the sportiest of the large luxury sedans. However, the latest model also goes the distance to pamper occupants at ...",
+        "speed": "280",
+        "energy": "1998",
+        "fuel": "petrol",
+        "price": "75.69 lakh",
+        "bg": "from-blue-800 to-slate-900"
+    },
+    {
+        "id": 9,
+        "image": "https://i.ibb.co/CKCy23F/car-1-removebg-preview.png",
+        "name": "Hundai Grand i10 Nios",
+        "description": "The new Grand i10 Nios slots in between the existing Grand i10 and larger i20 in Hyundai’s India range. Key talking points include keen prici...",
+        "speed": "199",
+        "energy": "1197",
+        "fuel": "petrol",
+        "price": "6.32 lakh",
+        "bg": "bg-gradient-to-br from-red-600 to-slate-900"
+    },
+    {
+        "id": 10,
+        "image": "https://i.ibb.co/sP80jyx/car-2-new-removebg-preview.png",
+        "name": "Aston Martin DB12",
+        "description": "The Aston Martin DB12 is the successor to the DB11, and is priced from Rs 4.8 crore (ex showroom) in India, before options. It no longer gets a V12 en...",
+        "speed": "320",
+        "energy": "3998",
+        "fuel": "petrol",
+        "price": "4.80 crore",
+        "bg": "from-green-600 to-slate-900"
+    },
+    {
+        "id": 11,
+        "image": "https://i.ibb.co/BgDf2tF/car-3-removebg-preview.png",
+        "name": "Rolls-Royce Wraith",
+        "description": "Rolls-Royce calls the Wraith a gentleman’s GT. It is that, and then some more. The four-seat coupe is the most powerful and most dynamic Rolls-Royce y...",
+        "speed": "240",
+        "energy": "6592",
+        "fuel": "petrol",
+        "price": "7.18 crore",
+        "bg": "from-slate-900 to-slate-700"
+    },
+    {
+        "id": 12,
+        "image": "https://i.ibb.co/b2Z1JMj/car-4-removebg-preview.png",
+        "name": "BMW 5 Series",
+        "description": "The BMW 5 Series has always been the sportiest of the large luxury sedans. However, the latest model also goes the distance to pamper occupants at ...",
+        "speed": "280",
+        "energy": "1998",
+        "fuel": "petrol",
+        "price": "75.69 lakh",
+        "bg": "from-blue-800 to-slate-900"
+    },
+    {
+        "id": 13,
+        "image": "https://i.ibb.co/CKCy23F/car-1-removebg-preview.png",
+        "name": "Hundai Grand i10 Nios",
+        "description": "The new Grand i10 Nios slots in between the existing Grand i10 and larger i20 in Hyundai’s India range. Key talking points include keen prici...",
+        "speed": "199",
+        "energy": "1197",
+        "fuel": "petrol",
+        "price": "6.32 lakh",
+        "bg": "bg-gradient-to-br from-red-600 to-slate-900"
+    },
+    {
+        "id": 14,
+        "image": "https://i.ibb.co/sP80jyx/car-2-new-removebg-preview.png",
+        "name": "Aston Martin DB12",
+        "description": "The Aston Martin DB12 is the successor to the DB11, and is priced from Rs 4.8 crore (ex showroom) in India, before options. It no longer gets a V12 en...",
+        "speed": "320",
+        "energy": "3998",
+        "fuel": "petrol",
+        "price": "4.80 crore",
+        "bg": "from-green-600 to-slate-900"
+    },
+    {
+        "id": 15,
+        "image": "https://i.ibb.co/BgDf2tF/car-3-removebg-preview.png",
+        "name": "Rolls-Royce Wraith",
+        "description": "Rolls-Royce calls the Wraith a gentleman’s GT. It is that, and then some more. The four-seat coupe is the most powerful and most dynamic Rolls-Royce y...",
+        "speed": "240",
+        "energy": "6592",
+        "fuel": "petrol",
+        "price": "7.18 crore",
+        "bg": "from-slate-900 to-slate-700"
+    },
+    {
+        "id": 16,
+        "image": "https://i.ibb.co/b2Z1JMj/car-4-removebg-preview.png",
+        "name": "BMW 5 Series",
+        "description": "The BMW 5 Series has always been the sportiest of the large luxury sedans. However, the latest model also goes the distance to pamper occupants at ...",
+        "speed": "280",
+        "energy": "1998",
+        "fuel": "petrol",
+        "price": "75.69 lakh",
+        "bg": "from-blue-800 to-slate-900"
+    }
+]

@@ -5,14 +5,14 @@ import {
   createBrowserRouter,
   RouterProvider,
 } from "react-router-dom";
-import Main from './Layout/Main';
+import CarSearchWebsite from './pages/CarSearchWebsite/CarSearchWebsite';
 
 
 
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <Main></Main>
+    element: <CarSearchWebsite></CarSearchWebsite>
   },
 ]);
 
