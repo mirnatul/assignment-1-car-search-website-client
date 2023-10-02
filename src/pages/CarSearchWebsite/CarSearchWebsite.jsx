@@ -72,7 +72,6 @@ const CarSearchWebsite = () => {
                 <div className='grid lg:grid-cols-3 mt-6 gap-4 p-2'>
                     {!searchBtn ?
                         currentPost.map((eachCar, index) => <CarCard key={index} eachCar={eachCar}></CarCard>) :
-                        // currentPost.map((eachCar, index) => <Link to={`page/${currentPage}`}><CarCard key={index} eachCar={eachCar}></CarCard></Link>) :
                         <CarCard eachCar={searchedCar}></CarCard>
                     }
                 </div>
