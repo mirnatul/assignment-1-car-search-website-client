@@ -1,10 +1,10 @@
 import React, { useEffect, useState } from 'react';
 import CarCard from './CarCard';
-import { Link, useNavigate } from 'react-router-dom'
+import { Link, useNavigate, useLoaderData } from 'react-router-dom'
 
 const CarSearchWebsite = () => {
     const [value, setValue] = useState('')
-    const [carData, setCarData] = useState([])
+    // const [carData, setCarData] = useState([])
     const [searchedCar, setSearchedCar] = useState({})
     const [searchedCarId, setSearchedCarId] = useState(0)
     const [searchBtn, setSearchBtn] = useState(false)
@@ -18,11 +18,12 @@ const CarSearchWebsite = () => {
 
     const pages = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
 
-    useEffect(() => {
-        fetch('car-details.json')
-            .then(res => res.json())
-            .then(data => setCarData(data))
-    }, [])
+    // useEffect(() => {
+    //     fetch('car-details.json')
+    //         .then(res => res.json())
+    //         .then(data => setCarData(data))
+    // }, [])
+    const carData = useLoaderData()
 
     const onSearch = (searchTerm) => {
         // our api to fetch the search result
