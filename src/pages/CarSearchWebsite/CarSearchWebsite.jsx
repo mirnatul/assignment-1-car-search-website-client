@@ -8,6 +8,12 @@ const CarSearchWebsite = () => {
     const [searchedCarId, setSearchedCarId] = useState(0)
     const [searchBtn, setSearchBtn] = useState(false)
 
+    // handle pagination
+    const [currentPage, setCurrentPage] = useState(1)
+    const [postPerPage, setPostPerPage] = useState(6)
+
+    const pages = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+
     useEffect(() => {
         fetch('car-details.json')
             .then(res => res.json())
@@ -16,7 +22,7 @@ const CarSearchWebsite = () => {
 
     const onSearch = (searchTerm) => {
         // our api to fetch the search result
-        console.log(searchTerm);
+        // console.log(searchTerm);
         setValue(searchTerm)
     }
 
@@ -26,7 +32,10 @@ const CarSearchWebsite = () => {
         setValue('')
     }
 
-    console.log(searchedCarId);
+    const lastPostIndex = currentPage * postPerPage
+    const firstPostIndex = lastPostIndex - postPerPage
+    const currentPost = carData.slice(firstPostIndex, lastPostIndex)
+    // console.log(searchedCarId);
     return (
         <div>
             <div className='max-w-7xl mx-auto relative'>
@@ -58,9 +67,16 @@ const CarSearchWebsite = () => {
                 {/* car card demo */}
                 <div className='grid lg:grid-cols-3 mt-6 gap-4 p-2'>
                     {!searchBtn ?
-                        carData.map((eachCar, index) => <CarCard key={index} eachCar={eachCar}></CarCard>) :
+                        currentPost.map((eachCar, index) => <CarCard key={index} eachCar={eachCar}></CarCard>) :
                         <CarCard eachCar={searchedCar}></CarCard>
                     }
+                </div>
+                <div className='flex justify-center gap-3 mt-6 mb-10'>
+                    <button onClick={() => setCurrentPage(currentPage - 1)} className='btn bg-slate-300'>Previous</button>
+                    {
+                        pages.map((page, index) => <button onClick={() => setCurrentPage(page)} className={`btn btn-warning hover:bg-orange-600 text-lg ${page === currentPage && 'bg-orange-600'}`}>{index + 1}</button>)
+                    }
+                    <button onClick={() => setCurrentPage(currentPage + 1)} className='btn bg-slate-300'>Next</button>
                 </div>
             </div>
         </div>
