@@ -18,12 +18,9 @@ const CarSearchWebsite = () => {
 
     const pages = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
 
-    // useEffect(() => {
-    //     fetch('car-details.json')
-    //         .then(res => res.json())
-    //         .then(data => setCarData(data))
-    // }, [])
     const carData = useLoaderData()
+
+    // console.log(carData);
 
     const onSearch = (searchTerm) => {
         // our api to fetch the search result
@@ -40,7 +37,7 @@ const CarSearchWebsite = () => {
     const lastPostIndex = currentPage * postPerPage
     const firstPostIndex = lastPostIndex - postPerPage
     const currentPost = carData.slice(firstPostIndex, lastPostIndex)
-    // console.log(searchedCarId);
+
     return (
         <div>
             <div className='max-w-7xl mx-auto relative'>
@@ -79,9 +76,9 @@ const CarSearchWebsite = () => {
                 <div className='flex justify-center gap-3 mt-6 mb-10'>
                     <button onClick={() => setCurrentPage(currentPage - 1)} className='btn bg-slate-300'>Previous</button>
                     {
-                        pages.map((page, index) => <button onClick={() => {
+                        pages.map((page, index) => <Link to={`/page/${index + 1}`} onClick={() => {
                             setCurrentPage(page)
-                        }} className={`btn btn-warning hover:bg-orange-600 text-lg ${page === currentPage && 'bg-orange-600'}`}>{index + 1}</button>)
+                        }} className={`btn btn-warning hover:bg-orange-600 text-lg ${page === currentPage && 'bg-orange-600'}`}>{index + 1}</Link>)
                     }
                     <button onClick={() => setCurrentPage(currentPage + 1)} className='btn bg-slate-300'>Next</button>
                 </div>

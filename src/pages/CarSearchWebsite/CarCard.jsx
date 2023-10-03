@@ -5,6 +5,7 @@ import { FaLock, FaUnlock, FaLongArrowAltRight, FaLongArrowAltLeft } from 'react
 
 
 const CarCard = ({ eachCar }) => {
+    // console.log(eachCar);
     return (
         <div className={`card w-full shadow-xl bg-gradient-to-br ${eachCar?.bg}`}>
             <div className='flex text-white justify-between px-6 pt-6'>

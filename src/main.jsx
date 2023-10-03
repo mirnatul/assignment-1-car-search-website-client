@@ -11,9 +11,9 @@ import CarSearchWebsite from './pages/CarSearchWebsite/CarSearchWebsite';
 
 const router = createBrowserRouter([
   {
-    path: "/",
+    path: "/page/:page",
     element: <CarSearchWebsite></CarSearchWebsite>,
-    loader: () => fetch(`car-details.json`)
+    loader: () => fetch('../public/car-details.json')
   },
 ]);
 
