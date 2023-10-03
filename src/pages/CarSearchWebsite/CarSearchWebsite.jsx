@@ -1,6 +1,6 @@
-import React, { useEffect, useState } from 'react';
+import React, { useState } from 'react';
 import CarCard from './CarCard';
-import { Link, useNavigate, useLoaderData } from 'react-router-dom'
+import { Link, useLoaderData } from 'react-router-dom'
 
 const CarSearchWebsite = () => {
     const [value, setValue] = useState('')
@@ -74,13 +74,13 @@ const CarSearchWebsite = () => {
                     }
                 </div>
                 <div className='flex justify-center gap-3 mt-6 mb-10'>
-                    <button onClick={() => setCurrentPage(currentPage - 1)} className='btn bg-slate-300'>Previous</button>
+                    <Link to={`/page/${currentPage - 1}`} onClick={() => setCurrentPage(currentPage - 1)} className='btn bg-slate-300'>Previous</Link>
                     {
                         pages.map((page, index) => <Link to={`/page/${index + 1}`} onClick={() => {
                             setCurrentPage(page)
                         }} className={`btn btn-warning hover:bg-orange-600 text-lg ${page === currentPage && 'bg-orange-600'}`}>{index + 1}</Link>)
                     }
-                    <button onClick={() => setCurrentPage(currentPage + 1)} className='btn bg-slate-300'>Next</button>
+                    <Link to={`/page/${currentPage + 1}`} onClick={() => setCurrentPage(currentPage + 1)} className='btn bg-slate-300'>Next</Link>
                 </div>
             </div>
         </div>

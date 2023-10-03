@@ -6,14 +6,19 @@ import {
   RouterProvider,
 } from "react-router-dom";
 import CarSearchWebsite from './pages/CarSearchWebsite/CarSearchWebsite';
+import Main from './Layout/Main';
 
 
 
 const router = createBrowserRouter([
   {
+    path: "/",
+    element: <Main></Main>
+  },
+  {
     path: "/page/:page",
     element: <CarSearchWebsite></CarSearchWebsite>,
-    loader: () => fetch('../public/car-details.json')
+    loader: () => fetch('/car-details.json')
   },
 ]);
 
