@@ -56,7 +56,7 @@ const CarSearchWebsite = () => {
                         carData.filter(item => {
                             const searchTerm = value.toLowerCase();
                             const carName = item.name.toLowerCase();
-                            return searchTerm && carName.startsWith(searchTerm) && carName !== searchTerm
+                            return searchTerm && carName.startsWith(searchTerm) // && carName !== searchTerm
                         }).slice(0, 10)
                             .map((eachCar, index) => <div onClick={() => {
                                 onSearch(eachCar.name)
